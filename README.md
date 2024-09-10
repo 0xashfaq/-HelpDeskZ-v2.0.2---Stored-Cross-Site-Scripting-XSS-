@@ -15,8 +15,7 @@ In HelpDeskZ v2.0.2, an attacker can exploit an XSS vulnerability by injecting m
 * Navigate to Tools > Custom Fields > New custom field.
 * Fill out the required fields and click on Submit.
 * Capture the request using Burp Suite or a similar tool.
-* Modify the title field with the following payload:
-  "><img+src=x+onerror=alert(1)>
+* Modify the title field with the following payload: "><img+src=x+onerror=alert(1)>
 * Forward this modified request.
 * Go to Tools > Custom Fields on the user panel to observe the XSS execution.
 
